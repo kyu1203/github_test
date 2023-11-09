@@ -7,10 +7,41 @@
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <title>Document</title>
+<style>
+    section { position: relative; width: 1920px; }
+    .img01, 
+    .img02 { position: absolute; top: 0; left: 0; }
+    .circle {
+    position: absolute;
+    top: 240px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid blue;
+    /* animation: moveCircle 2s linear infinite alternate; */
+    background: url(https://mazedaka.co.kr/test/champion/img/01.jpg) no-repeat;
+    background-position: -300px calc(50% - -50px);
+    background-size: 1920px auto;
+    }
+
+    @keyframes moveCircle {
+    to {
+        left: calc(100% - 600px);
+        background-position: -1324px calc(50% - -50px);
+    }
+    }
+</style>
 </head>
 <body>
 안녕하세요1
 브랜치 코딩 추가
 추가추가1
+
+<section>
+    <!--<img src="https://mazedaka.co.kr/test/champion/img/01.jpg" alt="" class="img01">-->
+    <img src="https://mazedaka.co.kr/test/champion/img/02.jpg" alt="" class="img02">
+    <div class="circle"></div>
+</section>
 </body>
 
